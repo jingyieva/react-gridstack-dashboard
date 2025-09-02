@@ -26,11 +26,14 @@ export function generateTimesMatrixData(y) {
     return data;
 }
 
-export const generateTs = (end) => {  //timestamp 10 digit
+export const generateTs = (end = new Date(), days = 20) => {  //timestamp 10 digit
     const data = [];
-    let dt = new Date(new Date().setDate(end.getDate() - 365));
+    // 起點 = end 往前 days 天
+    let dt = new Date(new Date().setDate(end.getDate() - days + 1));
     while (dt <= end) {
-      data.push();
+      const iso = dt.toISOString().split("T")[0];
+      data.push(iso);
+
       dt = new Date(dt.setDate(dt.getDate() + 1));
     }
     return data;
