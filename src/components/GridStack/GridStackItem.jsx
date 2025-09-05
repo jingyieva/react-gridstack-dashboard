@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
-import { useGridstackContext } from 'utils/useGridstackContext';
+import { useGridstackContext } from 'utils/useGridStackContext';
 
 export const GridstackItem = ({ id, children }) => {
     const { getWidgetContent } = useGridstackContext();
