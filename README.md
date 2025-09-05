@@ -1,7 +1,7 @@
 # React GridStack Dashboard
 一個基於 React + GridStack 打造的可拖曳式儀表板，支援動態新增、刪除、拖曳與縮放 Grid 元件，並可放入不同類型的圖表（Line、Bar、Pie 等）。此專案旨在提供一個模組化、可重複利用的前端儀表板架構。
 
-[🚀 Demo Page](待補充 Demo 連結或截圖)
+[🚀 Demo Page](https://react-gridstack-dashboard.vercel.app)
 
 ---
 
